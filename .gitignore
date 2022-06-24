@@ -1,0 +1,12 @@
+# Development
+/.vs
+/.idea
+
+# Dependencies
+/node_modules
+
+# Enviroment
+/.env
+
+# Production
+/build

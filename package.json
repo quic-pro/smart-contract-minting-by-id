@@ -1,0 +1,35 @@
+{
+  "name": "smart-contract-minting-by-id",
+  "version": "1.0.0",
+  "description": "Smart contract with the possibility of minting a token by ID.",
+  "scripts": {
+    "test": "truffle test",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "build": "truffle compile",
+    "migration": "truffle migration",
+    "coverage": "node --max-old-space-size=4096 ./node_modules/.bin/truffle run coverage",
+    "deploy:rinkeby": "truffle deploy --network rinkeby --reset",
+    "deploy:testnet": "truffle deploy --network testnet --reset",
+    "deploy:mumbai": "truffle deploy --network mumbai --reset",
+    "deploy:eth": "truffle deploy --network eth --reset",
+    "deploy:bsc": "truffle deploy --network bsc --reset",
+    "deploy:polygon": "truffle deploy --network polygon --reset"
+  },
+  "author": {
+    "name": "Sergey Bondarenko QUIC-PRO Inc. developer",
+    "email": "sergey@quic.pro"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "0.8.0-beta.1",
+    "truffle": "^5.4.33",
+    "truffle-plugin-verify": "^0.5.25"
+  }
+}
